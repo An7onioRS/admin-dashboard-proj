@@ -37,7 +37,7 @@
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 10px;
-    font-size: 2rem;
+    font-size: 2.2rem;
     align-items: center;
 }
 
@@ -61,7 +61,7 @@
     
 
     font-weight: bold;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     background: none;
     border: none;
 }
@@ -72,11 +72,13 @@
     cursor: pointer;
 }
 
-/* Header */
+/* Upper Header */
+
+.header {
+    padding: 20px 40px;
+}
 
 .top-header {
-    padding: 20px 40px;
-
     display: grid;
     grid-template-columns: auto 1fr;
     grid-auto-flow: column;
@@ -112,3 +114,48 @@
 .user-icon {
     border-radius: 40px;
 }
+
+/* Lower Header */
+
+.bottom-header {
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.greeting {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.greeting h4 {
+    align-self: flex-end;
+}
+
+.greeting img {
+    height: 80px;
+    width: 100%;
+    grid-row: span 2;
+    border-radius: 50px;
+}
+
+.notification-buttons {
+    align-self: end;
+    justify-self: right;
+}
+
+.notification-button {
+    font-size: 1rem;
+    font-weight: bold;
+    background: var(--sidebar-blue);
+    color: var(--white);
+    border: none;
+    height: 50%;
+    padding: 10px 30px;
+    border-radius: 80px;
+    margin-left: 15px;
+}
+

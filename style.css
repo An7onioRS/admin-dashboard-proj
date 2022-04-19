@@ -21,7 +21,7 @@
     grid-template-rows: auto 1fr;
 }
 
-/* Sidebar Styling */
+/* Sidebar */
 
 .sidebar {
     padding: 20px;
@@ -72,7 +72,7 @@
     cursor: pointer;
 }
 
-/* Upper Header */
+/* Header */
 
 .header {
     padding: 20px 40px;
@@ -89,6 +89,7 @@
 .top-header input {
     width: 80%;
     height: 100%;
+    padding: 20px;
     background: #f1f1f1;
     border-radius: 50px;
 }
@@ -118,8 +119,6 @@
 .user-icon {
     border-radius: 40px;
 }
-
-/* Lower Header */
 
 .bottom-header {
     padding: 25px 0;
@@ -163,6 +162,8 @@
     margin-left: 15px;
 }
 
+/*Main Content */
+
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -186,11 +187,6 @@
     grid-template-columns: 1fr 1fr;
 }
 
-/* .announcements,
-.trending {
-    width: 300px;
-} */
-
 .project,
 .announcements-content,
 .trending-content {
@@ -213,6 +209,20 @@
     position: absolute;
     right: 10px;
     bottom: 5px;
+}
+
+.activity {
+    background: none;
+    border: none;
+    margin: 0px 10px;
+}
+
+.activity:hover {
+    cursor: pointer;
+}
+
+.activity:active {
+    background: #f1f1f1;
 }
 
 .announcements-content,
